@@ -13,9 +13,9 @@ private:
     bool isSymbol;
     std::string material;
     int startingValue;
+
 public:
-    Die(int startingNumSide, int startingIncrement=1, int startingStartingValue= 1, std::string color= "white",
-            bool isSymbol = false,std::string material ="bone");
+    Die(int startingNumSide, int startingIncrement=1, int startingStartingValue= 1);
     int roll();
     void setNumSide(int newNumSide);
     int getNumSide();
@@ -23,13 +23,13 @@ public:
     int getIncrement();
     void setValue(int newValue);
     int getValue();
-    void setColor(std::string newColor);
+   /* void setColor(std::string newColor);
     std::string getColor();
-    void setMaterial(std::string newMaterial;
+    void setMaterial(std::string newMaterial);
     std::string getCMaterial();
     void setIsSymbol(bool newSymbol);
     bool getIsSymbol();
-
+*/
 };
 
 #endif //CRAPS_DIE_H
